@@ -1,0 +1,21 @@
+package com.test.begin.di1;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		// 목적] Hong에게 일을 시키자!!
+		// Main > Hong(X)
+		// Main > Service > Hong(O)
+		// Service > 중간관리자 역할
+		
+		
+		//Hong hong = new Hong(); > 일케 안함
+		
+		Service service = new Service();
+		
+		
+		
+	}
+
+}

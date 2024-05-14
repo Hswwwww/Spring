@@ -1,0 +1,12 @@
+package com.test.begin.aop;
+
+public class Main {
+	
+	public Main() {
+		
+	 //주 업무 객체 > MemoImpl
+	MemoImpl memo = new MemoImpl();
+		
+	}
+
+}
