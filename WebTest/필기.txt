@@ -124,6 +124,13 @@
 	- "Worker.java"(I)
 
 
+- "com.test.web.controller" > "Ex10Controller.java"
+- "com.test.web.service" > "BoardService.java"
+						 > "DataService.java"(I)
+						 > "MemoService.java"
+- view > "ex10.jsp"
+- 의존 주입 >> 스프링에서 흔히 보는 객체 생성 방법!
+
 
 
 
