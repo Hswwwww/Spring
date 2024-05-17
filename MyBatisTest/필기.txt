@@ -71,8 +71,102 @@ Commons DBCP
 		
 - root-context.xml > 설정 추가
 
+<!-- 		Commons DBCP 설정
+ -->
+ 
+ 	
+ 	<bean id="dataSource" class ="org.apache.commons.dbcp.BasicDataSource">
+ 		<property name="driverClassName" value ="oracle.jdbc.driver.OracleDriver"></property>
+ 		<property name="url" value ="jdbc:oracle:thin:@localhost:1521:xe"></property>
+ 		<property name="username" value ="spring"></property>
+ 		<property name="password" value ="java1234"></property>
+ 	</bean>
+ 	
+
 Commons DBCP > 단위 테스트
 -"com.test.mybatis.persistence" > "DBCPTest.java"
+
+HikariCP
+- pom.xml > 의존성 추가
+	
+		<!-- 		HikariCP -->
+
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>2.7.4</version>
+		</dependency>
+		
+- root-context.xml > 설정 추가
+
+
+MyBatis 설정
+- pom.xml > 의존성추가 (4개)
+- root-context.xml > 설정 추가
+
+
+MyBatis(iBatis) 설명
+- 영속성 계층(데이터베이스 조작 계층)
+- JDBC 역할 > JDBC 상위역할임
+- SQL Mapping Framework(***) > SQL의 실행 결과를 객체지향으로 '매핑'해준다.
+- JDBC > 생산성 향상, 유지보수 향상
+- SQL 분리(***) > 기존방식(SQL > 문자열) > MyBatis 방식(XML로 분리)
+
+
+MyBatis를 스프링에 적용하는 방법
+1. XML 매퍼를 사용하는 방법
+	- 오늘
+	
+2. 인터페이스 매퍼를 사용하는 방법
+	- 다음주
+
+log4j설정 
+- pom.xml > 버전 수정, 의존성 1개 추가
+	<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bgee.log4jdbc-log4j2</groupId>
+			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+			<version>1.16</version>
+		</dependency>
+- src/main/resource > log4jdbc.log4j2.properties
+- log4j.xml > 일부 수정
+- root-context.xml > 일부 수정
+
+
+
+
+
+
+================================================ 설정 끝
+
+MyBatis 사용 + SQL 실행
+
+- "com.test.mybatis.controller" > "MyBatisController.java"
+
+- "com.test.mybatis.dao" > "MyBatisDAO.java"(I)
+						 > "MyBatisDAOImpl.java"(C)
+- "com.test.mybatis.dto" > "MyBatisDTO.java"
+
+- src/main/resource > mapper > "mybatis.xml"
+- src/main/resource > "config" > "mybatis-config.xml"
+
+- views > "list.jsp"
+		> "add.jsp"
+		> "addok.jsp"
+
+- MyBatisTest > "script.sql"
+
+
+
+
+
+
+
+
 
 
 
