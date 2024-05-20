@@ -46,7 +46,7 @@ Spring + DB 연동
 
 ojdbc8.jar
 - 직접 참조
-- buildpath > Add External JaRs > deploymeny Assembly > apply
+- buildpath > Add External JaRs > apply > deploymeny Assembly > add > jabaBuildPathEntries
 
 - MyBatis > 라이브러리(O)
 - MyBatis > 설정(X)
@@ -157,6 +157,7 @@ MyBatis 사용 + SQL 실행
 - views > "list.jsp"
 		> "add.jsp"
 		> "addok.jsp"
+		> "result.jsp"
 
 - MyBatisTest > "script.sql"
 
