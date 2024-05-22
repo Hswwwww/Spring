@@ -62,7 +62,7 @@ Spring DI
 						> "Main.java"
 						> "Service.java"
 						> "Hong.java"
-						> "di3.xml"
+						> "di3.xml"            
 						
 						
 *** 스프링 환경에서는 클래스의 객체(Bean)를 생성 ~ 관리 ~ 소멸까지를
