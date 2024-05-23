@@ -1,0 +1,22 @@
+Spring MyBatis + Interface Mapper
+
+
+1. 새 프로젝트
+- Project name: "MyBatisSimpleTest"
+- Templates: Spring MVC Project
+- Enter a topLevelPackage: "com.test.mybatis"
+
+
+
+10. web.xml
+- 필터 추가
+
+12.파일 생성
+- "com.test.mybatis.controller" > "AddressController.java"
+- "com.test.mybatis.dao" > "AddressDAO.java"(I)
+						 > "AddressDAOImpl.java"(C)
+- "com.test.mybatis.dto" > "AddressDTO.java"
+
+- "com.test.mybatis.mapper" > "AddressMapper.java"(I) > 인터페이스 매퍼
+
+- src/main/resource > "com" > "test" > "mybatis" > "mapper" > "AddressMapper.xml"

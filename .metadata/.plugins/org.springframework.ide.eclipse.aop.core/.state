@@ -3,19 +3,27 @@
 <aop-project name="hello"/>
 <aop-project name="NonTilesTest"/>
 <aop-project name="Code"/>
-<aop-project name="WebTest"/>
+<aop-project name="MyBatisSimpleTest"/>
 <aop-project name="TilesTest"/>
+<aop-project name="WebSocketTest"/>
+<aop-project name="MyBatisTest"/>
+<aop-project name="WebTest"/>
+<aop-project name="RESTfulTest"/>
 <aop-project name="BeginTest">
-<aspect-definition advice-class-name="com.test.begin.aop.Logger" advice-method-name="around" advice-type="AROUND" aspect-end-line-number="80" aspect-name="logger" aspect-start-line-number="80" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" pointcut-expression="execution(public void com.test.begin.aop.MemoImpl.add(String))" proxy-target-class="false">
-<aop-reference advice-type="AROUND" bean="1:BeansModel|2:BeginTest|3:src/main/java/com/test/begin/aop/memo.xml|7:beans:7|8:memo:16" bean-file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" bean-start-line="16" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" source="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{Logger.java[Logger~around~QProceedingJoinPoint;" source-start-line="24" target="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{MemoImpl.java[MemoImpl~add~QString;" target-start-line="7"/>
-</aspect-definition>
 <aspect-definition advice-class-name="com.test.begin.aop.Logger" advice-method-name="history" advice-type="AFTER_RETURNING" aspect-end-line-number="82" aspect-name="logger" aspect-start-line-number="82" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" pointcut-expression="execution(public String com.test.begin.aop.MemoImpl.read(int))" proxy-target-class="false" returning="memo">
 <aop-reference advice-type="AFTER_RETURNING" bean="1:BeansModel|2:BeginTest|3:src/main/java/com/test/begin/aop/memo.xml|7:beans:7|8:memo:16" bean-file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" bean-start-line="16" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" source="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{Logger.java[Logger~history~QString;" source-start-line="50" target="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{MemoImpl.java[MemoImpl~read~I" target-start-line="24"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.test.begin.aop.Logger" advice-method-name="around" advice-type="AROUND" aspect-end-line-number="80" aspect-name="logger" aspect-start-line-number="80" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" pointcut-expression="execution(public void com.test.begin.aop.MemoImpl.add(String))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:BeginTest|3:src/main/java/com/test/begin/aop/memo.xml|7:beans:7|8:memo:16" bean-file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" bean-start-line="16" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" source="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{Logger.java[Logger~around~QProceedingJoinPoint;" source-start-line="24" target="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{MemoImpl.java[MemoImpl~add~QString;" target-start-line="7"/>
 </aspect-definition>
 <aspect-definition advice-class-name="com.test.begin.aop.Logger" advice-method-name="check" advice-type="AFTER_THROWING" aspect-end-line-number="84" aspect-name="logger" aspect-start-line-number="84" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" pointcut-expression="execution(public String com.test.begin.aop.MemoImpl.read(int))" proxy-target-class="false" throwing="e">
 <aop-reference advice-type="AFTER_THROWING" bean="1:BeansModel|2:BeginTest|3:src/main/java/com/test/begin/aop/memo.xml|7:beans:7|8:memo:16" bean-file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" bean-start-line="16" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" source="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{Logger.java[Logger~check~QException;" source-start-line="56" target="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{MemoImpl.java[MemoImpl~read~I" target-start-line="24"/>
 </aspect-definition>
 </aop-project>
-<aop-project name="MyBatisTest"/>
 <aop-project name="FileTest"/>
+<aop-project name="AOPTest">
+<aspect-definition advice-class-name="com.test.aop.aspect.Logger" advice-method-name="m1" advice-type="AFTER" aspect-end-line-number="27" aspect-name="logger" aspect-start-line-number="27" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="pc1()" proxy-target-class="false">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:AOPTest|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:AOPController:10" bean-file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.aop.aspect{Logger.java[Logger~m1" source-start-line="22" target="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.aop.controller{AOPController.java[AOPController~add" target-start-line="76"/>
+</aspect-definition>
+</aop-project>
 </aop-reference-model>
