@@ -11,3 +11,13 @@ truncate table tblMemo;
 
 select * from tblAddress order by seq;
 
+
+
+
+
+
+
+
+
+
+

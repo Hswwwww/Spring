@@ -41,7 +41,7 @@ public class ChatServer {
 		
 		if(message.getCode().equals("1")) {
 			//새로운 유저가 접속했습니다.
-
+ 
 			for(Session s : sessionList) {
 				if(s != session) {
 					try {

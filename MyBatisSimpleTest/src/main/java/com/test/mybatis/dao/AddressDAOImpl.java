@@ -26,7 +26,7 @@ public class AddressDAOImpl implements AddressDAO {
 	
 	@Override
 	public List<AddressDTO> list() {
-		// TODO Auto-generated method stub
+		
 		return mapper.list();
 	}
 	
